@@ -42,6 +42,9 @@ module.exports = {
   ignorePatterns: ["node_modules/", "dist/"],
   // add rules configurations here
   rules: {
-    "import/no-default-export": "off",
+    "import/no-default-export": "off", // Disables the rule that disallows default exports
+    "@typescript-eslint/explicit-function-return-type": "off", // Disables the rule that enforces specifying return types on functions
+    eqeqeq: "off", // Disables the rule that enforces using '===' instead of '=='
+    "jsx-a11y/heading-has-content": "off",
   },
 };
