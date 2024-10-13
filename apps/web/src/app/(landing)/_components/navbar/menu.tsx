@@ -33,7 +33,7 @@ function Menu({ orientation }: Readonly<MenuProps>) {
                     ? "border-[#27272A] bg-[#09090B]"
                     : "",
                 )}
-                key={menuItem.id}
+                key={`menu-item-${menuItem.id}`}
               >
                 {section == menuItem.path && menuItem.icon}
                 {menuItem.label}
@@ -48,6 +48,7 @@ function Menu({ orientation }: Readonly<MenuProps>) {
           {TEAMIFY_CONSTANTS.landingPageMenu.map((menuItem) => (
             <Link
               href={menuItem.path}
+              key={`menu-mobile-${menuItem.id}`}
               {...(menuItem.section && {
                 onClick: () => {
                   onSetSection(menuItem.path);
@@ -57,7 +58,6 @@ function Menu({ orientation }: Readonly<MenuProps>) {
                 "flex items-center gap-2 rounded-xl px-4 py-2",
                 section == menuItem.path ? "bg-themeGray border-[#27272A]" : "",
               )}
-              key={menuItem.id}
             >
               {menuItem.icon}
               {menuItem.label}
@@ -66,7 +66,7 @@ function Menu({ orientation }: Readonly<MenuProps>) {
         </div>
       );
     default:
-      return <div/>;
+      return <div />;
   }
 }
 

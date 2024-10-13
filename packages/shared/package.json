@@ -1,15 +1,20 @@
 {
-  "name": "@repo/shared-utils",
+  "name": "@repo/shared",
   "version": "0.0.0",
   "private": true,
   "exports": {
-    ".": "./src/index.ts"
+    "./utils": "./src/utils/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "peerDependencies": {
+    "zod": "^3.23.8"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.3"
   },
   "devDependencies": {
+    "@repo/typescript-config": "*",
     "typescript": "^5.3.3"
   }
 }

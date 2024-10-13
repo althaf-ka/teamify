@@ -13,21 +13,21 @@ export const LANDING_PAGE_MENU: MenuProps[] = [
   {
     id: 0,
     label: "Home",
-    icon: <Home />,
+    icon: <Home key="home-icon" />,
     path: "/",
     section: true,
   },
   {
     id: 1,
     label: "Pricing",
-    icon: <CreditCard />,
+    icon: <CreditCard key="credit-card-icon" />,
     path: "#pricing",
     section: true,
   },
   {
-    id: 1,
+    id: 2,
     label: "Explore",
-    icon: <Explore />,
+    icon: <Explore key="explore-icon" />,
     path: "/explore",
   },
 ];

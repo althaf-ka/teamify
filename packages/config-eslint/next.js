@@ -46,5 +46,24 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off", // Disables the rule that enforces specifying return types on functions
     eqeqeq: "off", // Disables the rule that enforces using '===' instead of '=='
     "jsx-a11y/heading-has-content": "off",
+    "@typescript-eslint/no-unnecessary-condition": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: ["test/**"],
+        optionalDependencies: false,
+        peerDependencies: false,
+      },
+    ],
+    "no-console": ["error", { allow: ["error"] }],
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: ["arrow-function", "function-declaration"],
+        unnamedComponents: "arrow-function",
+      },
+    ],
   },
 };
