@@ -4,7 +4,9 @@
   "private": true,
   "exports": {
     "./utils": "./src/utils/index.ts",
-    "./schema": "./src/schema/index.ts"
+    "./schema": "./src/schema/index.ts",
+    "./types": "./src/types/index.ts",
+    "./constants": "./src/constants/index.ts"
   },
   "peerDependencies": {
     "zod": "^3.23.8"

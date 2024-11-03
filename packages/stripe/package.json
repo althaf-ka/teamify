@@ -1,0 +1,14 @@
+{
+  "name": "@repo/stripe",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*"
+  },
+  "dependencies": {
+    "stripe": "^17.2.0"
+  }
+}

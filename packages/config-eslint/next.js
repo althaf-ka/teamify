@@ -65,5 +65,6 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
+    "@typescript-eslint/consistent-type-imports": "off",
   },
 };

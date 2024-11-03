@@ -19,7 +19,7 @@ function CallToAction() {
         people to connect, <br className="hidden md:block" /> collaborate, and
         cultivate meaningful
         <br className="md:hidden" />
-        relationships
+        {" "}relationships
       </p>
       <div className="flex w-full flex-col gap-5 md:mt-5 md:flex-row md:justify-center">
         <Button

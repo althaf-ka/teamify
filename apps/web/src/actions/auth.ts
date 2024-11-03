@@ -1,7 +1,7 @@
 "use server";
 
 import { currentUser } from "@clerk/nextjs/server";
-import { findUserByClerkId, createUser } from "@repo/database";
+import { findUserByClerkId, createUser } from "@repo/database/user";
 
 export const onAuthenticatedUser = async () => {
   try {

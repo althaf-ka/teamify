@@ -38,7 +38,6 @@ export { MegaPhone } from "./mega-phone";
 export { MegaPhoneDuoToneBlack } from "./megaphone-duo-tone-black";
 export { MegaPhoneDuoToneWhite } from "./megaphone-duo-tone-white";
 export { Message } from "./message";
-export { Music } from "./music";
 export { PersonalDevelopment } from "./personal-development";
 export { PurpleCheck } from "./purple-check";
 export { Settings } from "./settings";

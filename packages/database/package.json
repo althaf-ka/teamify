@@ -3,16 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    ".": "./src/index.ts"
+    "./user": "./src/user/index.ts",
+    "./group":"./src/group/index.ts"
   },
   "scripts": {
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate"
   },
+  "peerDependencies": {
+    "zod": "^3.23.8"
+  },
   "dependencies": {
-    "@prisma/client": "^5.20.0"
+    "@prisma/client": "^5.20.0",
+    "@repo/shared": "*",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
     "prisma": "^5.20.0"
   }
 }

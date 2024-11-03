@@ -1,5 +1,6 @@
 import { Check } from "@repo/ui/icons/web";
 import Link from "next/link";
+import { BASIC_PLAN_AMOUNT } from "@repo/shared/constants";
 import BackdropGradient from "@/components/global/backdrop-gradient";
 import GradientText from "@/components/global/gradientText";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ export function PricingSection() {
       </BackdropGradient>
       <Card className="bg-themeBlack border-themeGray mt-10 w-full p-7 md:w-auto">
         <div className="flex flex-col gap-2">
-          <CardTitle>99/m</CardTitle>
+          <CardTitle>₹ {BASIC_PLAN_AMOUNT}/m</CardTitle>
           <CardDescription className="text-[#B4B0AE]">
             Great if you’re just getting started
           </CardDescription>
